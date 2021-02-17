@@ -1,0 +1,17 @@
+.progress-bar {
+margin-top: 100px;
+    background-color: #030e56;
+    height: 22px;
+    border-radius: 8px;
+}
+
+h1 {
+    margin-top: 35px;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+}
+
+.container {
+    width: 55%;
+    margin: 0 auto;
+}

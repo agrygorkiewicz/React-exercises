@@ -1,0 +1,135 @@
+body {
+margin: 0 auto;
+  font-family: 'Cormorant Garamond', serif;
+
+}
+
+img {
+  width: 520px;
+  height: 100vh;
+  margin: 0 auto;
+  z-index: -1;
+  position: absolute;
+}
+.header h2 {
+  font-size: 44px;
+
+}
+
+.toDoList {
+position: relative;
+  width: 750px;
+  margin: 0 140px 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 14px 2px rgba(0, 0, 0, 0.15);
+
+}
+main {
+  padding-top: 110px;
+}
+
+
+.toDoList ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.toDoList ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 22px;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.toDoList ul li:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.toDoList ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+.toDoList ul li:hover {
+  background: #ddd;
+}
+
+.toDoList ul li.done {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.toDoList ul li.done::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 15px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+
+.toDoList .header {
+  background-color: #dfe7e7;
+  padding: 30px 40px;
+  color: #000000;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+.toDoList .header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.toDoList input {
+  border: none;
+  width: 90%;
+  padding: 10px;
+  float: left;
+  font-size: 22px;
+  border-radius: 3px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.toDoList .btn-add {
+  margin-top: 14px;
+  padding: 11px;
+  width: 25%;
+  background: #588C7E;
+  color: black;
+  float: left;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 0;
+  border-radius: 5px;
+  font-family: 'Playfair Display', serif;
+}
+  button {
+    color: #ffffff;
+  }
+
+
+.toDoList .btn-add:hover {
+  background-color: #a5a3a3;
+  color: #eeeeee;
+}
+
